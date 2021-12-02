@@ -17,7 +17,6 @@ import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-
 function App() {
   const [darkMode, setDarkMode] = useState(false)
   const [value, setValue] = React.useState(0);
@@ -64,7 +63,7 @@ function App() {
             <ModeNightIcon />
 
             <Switch
-
+              id='nightmodeswitch'
               item={true}
 
               checked={darkMode}
@@ -87,7 +86,7 @@ function App() {
 
             sm={12}>
 
-            <Paper style={{ height: '500px'}}>
+            <Paper id='landing' style={{ height: '500px'}}>
 
               <Landing
 
@@ -116,11 +115,13 @@ function App() {
               />
 
             </Paper>
-
+           
           </Grid>
 
         </Grid>
+        
       </Container>
+    
         <Box 
         component="footer"
         sx={{
@@ -143,8 +144,8 @@ function App() {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-            <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+            <BottomNavigationAction href='#landing' label="Recents" icon={<RestoreIcon />} />
+            <BottomNavigationAction href='#nightmodeswitch' label="Favorites" icon={<FavoriteIcon />} />
             <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
           </BottomNavigation>
           </Paper>
