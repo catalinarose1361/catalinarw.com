@@ -70,33 +70,7 @@ function App() {
 
         >
 
-          {/* <Grid
-
-            style={{ textAlign: "center" }}
-
-            item
-
-            sm={12}
-
-          >
-
-            <ModeNightIcon />
-
-            <Switch
-              id='nightmodeswitch'
-              item={true}
-
-              checked={darkMode}
-
-              onChange={() => setDarkMode(!darkMode)}
-
-              name="checkedA"
-
-            />
-
-            <Brightness4Icon />
-
-          </Grid> */}
+         
 
           <Grid
 
@@ -195,11 +169,7 @@ function App() {
         
         >
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-          {/* <Grid style={{ textAlign: "center" }} */}
-
-            {/* item
-
-            sm={12}> */}
+     
             <SpeedDial
               ariaLabel="SpeedDial basic example"
               sx={{ position: 'absolute', bottom: 65, right: 875 }}
@@ -214,7 +184,7 @@ function App() {
                 />
               ))}
             </SpeedDial>
-          {/* </Grid> */}
+       
           <Grid
 
             style={{ textAlign: "center" }}
@@ -224,63 +194,7 @@ function App() {
             sm={12}
 
           >
-            {/* <Fab color="secondary" aria-label="edit">
-              <AddIcon />
-            </Fab> */}
-            {/* <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
-              <SpeedDial
-                ariaLabel="SpeedDial basic example"
-                sx={{ position: 'absolute', bottom: 16, right: 16 }}
-                icon={<SpeedDialIcon />}
-              >
-                {actions.map((action) => (
-                  <SpeedDialAction
-                    key={action.name}
-                    icon={action.icon}
-                    tooltipTitle={action.name}
-                  />
-                ))}
-              </SpeedDial>
-            </Box> */}
-            {/* <ModeNightIcon />
-
-            <Switch
-              id='nightmodeswitch'
-              item={true}
-
-              checked={darkMode}
-
-              onChange={() => setDarkMode(!darkMode)}
-
-              name="checkedA"
-
-            />
-
-            <Brightness4Icon />
-
-          </Grid> */}
-      
-          {/* <BottomNavigation
-            showLabels
-            value={value}
-            onChange={(event, newValue) => {
-              setValue(newValue);
-            }}
-          > */}
-            {/* <SpeedDial
-              ariaLabel="SpeedDial basic example"
-              sx={{ position: 'absolute', bottom: 16, right: 16 }}
-              icon={<SpeedDialIcon />}
-            >
-              {actions.map((action) => (
-                <SpeedDialAction
-                  key={action.name}
-                  icon={action.icon}
-                  tooltipTitle={action.name}
-                />
-              ))}
-            </SpeedDial> */}
-            {/* <BottomNavigationAction href='#landing' label="Recents" icon={<RestoreIcon />} /> */}
+          
             <WbSunnyIcon  />
 
             <Switch
