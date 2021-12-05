@@ -172,7 +172,7 @@ function App() {
      
             <SpeedDial
               ariaLabel="SpeedDial basic example"
-              sx={{ position: 'absolute', bottom: 65, right: 875 }}
+              sx={{ position: 'absolute', bottom: 65, right: 995 }}
               icon={<ExploreIcon />}
             >
               {actions.map((action) => (
