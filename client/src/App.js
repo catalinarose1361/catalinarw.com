@@ -57,8 +57,9 @@ function App() {
       theme={theme}
 
     >
-
+      
       <Container component="main">
+      
 
         <Grid
 
@@ -69,7 +70,7 @@ function App() {
           container
 
         >
-
+          <Landing />
          
 
           <Grid
