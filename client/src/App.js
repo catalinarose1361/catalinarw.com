@@ -70,7 +70,15 @@ function App() {
           container
 
         >
+           <Grid
+
+            style={{ textAlign: "center", marginBottom: "20px", height: '500px' }}
+
+            item
+
+            sm={12}>
           <Landing />
+          </Grid>
          
 
           <Grid
