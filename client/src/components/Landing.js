@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from "../images/video2.mp4";
+import Video from "../images/video.mp4";
 // import Gif from "../videos/gif.gif"
 import Box from '@mui/material/Box';
 import { Grid, Paper, Container, Switch } from '@mui/material';
