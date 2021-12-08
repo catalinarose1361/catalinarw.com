@@ -33,9 +33,9 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import BrushIcon from '@mui/icons-material/Brush';
 const actions = [
   { icon: <AccountCircleIcon />, name: 'Biography', href: '#bio' },
-  { icon: <BrushIcon />, name: 'Skills',  href: '#skills' },
-  { icon: <HistoryEduIcon />, name: 'Documents', href: '#documents'},
-  { icon: <MenuBookIcon />, name: 'Portfolio', href: '#portfolio'},
+  { icon: <BrushIcon />, name: 'Skills', href: '#skills' },
+  { icon: <HistoryEduIcon />, name: 'Documents', href: '#documents' },
+  { icon: <MenuBookIcon />, name: 'Portfolio', href: '#portfolio' },
 ];
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -57,9 +57,9 @@ function App() {
       theme={theme}
 
     >
-      
+
       <Container component="main">
-      
+
 
         <Grid
 
@@ -70,16 +70,16 @@ function App() {
           container
 
         >
-           <Grid
+          <Grid
 
             style={{ textAlign: "center", marginBottom: "20px", height: '500px' }}
 
             item
 
             sm={12}>
-          <Landing />
+            <Landing />
           </Grid>
-         
+
 
           <Grid
 
@@ -88,17 +88,18 @@ function App() {
             item
 
             sm={12}>
+            <Box>
 
-            <Paper id='bio' style={{ height: '500px'}}>
+              <Paper id='bio' >
 
-              <Bio
+                <Bio
 
-                item={true}
+                  item={true}
 
-              />
+                />
 
-            </Paper>
-
+              </Paper>
+            </Box>
           </Grid>
 
           <Grid
@@ -108,17 +109,17 @@ function App() {
             item sm={12}
 
           >
+            <Box>
+              <Paper id='skills' >
 
-            <Paper id='skills' style={{ height: '500px' }}>
+                <Skills
 
-              <Skills
+                  item={true}
 
-                item={true}
+                />
 
-              />
-
-            </Paper>
-           
+              </Paper>
+            </Box>
           </Grid>
           <Grid
 
@@ -127,17 +128,17 @@ function App() {
             item sm={12}
 
           >
+            <Box>
+              <Paper id='documents' >
 
-            <Paper id='documents' style={{ height: '500px' }}>
+                <Documents
 
-              <Documents
+                  item={true}
 
-                item={true}
+                />
 
-              />
-
-            </Paper>
-           
+              </Paper>
+            </Box>
           </Grid>
           <Grid
 
@@ -146,24 +147,24 @@ function App() {
             item sm={12}
 
           >
+            <Box>
+              <Paper id='portfolio' >
 
-            <Paper id='portfolio' style={{ height: '500px' }}>
+                <Portfolio
 
-              <Portfolio
+                  item={true}
 
-                item={true}
+                />
 
-              />
-
-            </Paper>
-           
+              </Paper>
+            </Box>
           </Grid>
 
         </Grid>
-        
+
       </Container>
-    
-        <Box 
+
+      <Box
         component="footer"
         sx={{
           position: 'fixed',
@@ -175,25 +176,25 @@ function App() {
               ? theme.palette.grey[200]
               : theme.palette.grey[800],
         }}
-        
-        >
+
+      >
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-     
-            <SpeedDial
-              ariaLabel="SpeedDial basic example"
-              sx={{ position: 'absolute', bottom: 65, right: 995 }}
-              icon={<ExploreIcon />}
-            >
-              {actions.map((action) => (
-                <SpeedDialAction
-                  key={action.name}
-                  icon={action.icon}
-                  tooltipTitle={action.name}
-                  href={action.href}
-                />
-              ))}
-            </SpeedDial>
-       
+
+          <SpeedDial
+            ariaLabel="SpeedDial basic example"
+            sx={{ position: 'absolute', bottom: 65, right: 995 }}
+            icon={<ExploreIcon />}
+          >
+            {actions.map((action) => (
+              <SpeedDialAction
+                key={action.name}
+                icon={action.icon}
+                tooltipTitle={action.name}
+                href={action.href}
+              />
+            ))}
+          </SpeedDial>
+
           <Grid
 
             style={{ textAlign: "center" }}
@@ -203,8 +204,8 @@ function App() {
             sm={12}
 
           >
-          
-            <WbSunnyIcon  />
+
+            <WbSunnyIcon />
 
             <Switch
               id='nightmodeswitch'
@@ -219,11 +220,11 @@ function App() {
             />
 
             <DarkModeIcon />
-            </Grid>
-       
-          </Paper>
-        </Box>
-     
+          </Grid>
+
+        </Paper>
+      </Box>
+
 
     </ThemeProvider>
 
