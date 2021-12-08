@@ -31,6 +31,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import BrushIcon from '@mui/icons-material/Brush';
+import Footer from './components/Footer';
 const actions = [
   { icon: <AccountCircleIcon />, name: 'Biography', href: '#bio' },
   { icon: <BrushIcon />, name: 'Skills', href: '#skills' },
@@ -164,66 +165,12 @@ function App() {
 
       </Container>
 
-      <Box
-        component="footer"
-        sx={{
-          position: 'fixed',
-          py: 3,
-          px: 2,
-          mt: 'auto',
-          backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
-        }}
-
-      >
-        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-
-          <SpeedDial
-            ariaLabel="SpeedDial basic example"
-            sx={{ position: 'absolute', bottom: 65, right: 995 }}
-            icon={<ExploreIcon />}
-          >
-            {actions.map((action) => (
-              <SpeedDialAction
-                key={action.name}
-                icon={action.icon}
-                tooltipTitle={action.name}
-                href={action.href}
-              />
-            ))}
-          </SpeedDial>
-
-          <Grid
-
-            style={{ textAlign: "center" }}
-
-            item
-
-            sm={12}
-
-          >
-
-            <WbSunnyIcon />
-
-            <Switch
-              id='nightmodeswitch'
-              item={true}
-
-              checked={darkMode}
-
-              onChange={() => setDarkMode(!darkMode)}
-
-              name="checkedA"
-
-            />
-
-            <DarkModeIcon />
-          </Grid>
-
-        </Paper>
-      </Box>
+     <Footer 
+      darkmode={darkMode}
+      setdarkmode={setDarkMode}
+      actions={actions}
+      theme={theme}
+     />
 
 
     </ThemeProvider>
