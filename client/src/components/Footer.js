@@ -40,9 +40,15 @@ const Footer = (props) => {
         >
             <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
 
-                <SpeedDial
+                <SpeedDial style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    top: -30,
+                    left: 0,
+                    right: 0,
+                    margin: '0 auto',}}
                     ariaLabel="SpeedDial basic example"
-                    sx={{ position: 'absolute', bottom: 65, right: 995 }}
+                    sx={{ position: 'absolute', bottom: 5, right: 995 }}
                     icon={<ExploreIcon />}
                 >
                     {actions.map((action) => (
