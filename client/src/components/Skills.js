@@ -123,24 +123,24 @@ const Skills = () => {
 
     const open = Boolean(anchorEl);
     const id = open ? 'simple-popover' : undefined;
-    const value = 3.5;
+  
     return (
-        <Card>
-            <h1>
+        <Card >
+            <h1 >
                 Skills
             </h1>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {data.map((index) => (
-                        
-                            <Grid item xs={2} sm={4} md={4} key={index}>
-                                <Grid>
+
+                        <Grid item xs={2} sm={4} md={4} key={index}>
+                            <Grid>
 
                                 <img alt={index.name} src={index.logo} />
-                                </Grid>
-                         <Grid>
+                            </Grid>
+                            <Grid>
 
-                         
+
                                 <Button aria-describedby={id} variant="text" onClick={handleClick}>
                                     {index.name}
                                 </Button>
@@ -156,7 +156,7 @@ const Skills = () => {
                                 >
                                     <Card sx={{ minWidth: 275 }}>
                                         <CardContent>
-                                        
+
                                             <Typography variant="h5" component="div">
                                                 {index.years} Years of Experience
                                             </Typography>
@@ -173,7 +173,7 @@ const Skills = () => {
                                                     alignItems: 'center',
                                                 }}
                                             >
-                                             
+
                                                 <Rating
                                                     name="text-feedback"
                                                     value={index.value}
@@ -190,8 +190,8 @@ const Skills = () => {
                                     </Card>
                                 </Popover>
                             </Grid>
-                            </Grid>
-                       
+                        </Grid>
+
                     ))}
                 </Grid>
             </Box>

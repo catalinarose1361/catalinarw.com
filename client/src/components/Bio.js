@@ -1,8 +1,9 @@
 import React from 'react';
 import Avatar from '@mui/material/Avatar';
-import ProfilePhoto from '../images/IMG1.jpeg'
-import { Grid, Paper, Container, Switch } from '@mui/material';
+import ProfilePhoto from '../images/avatar.jpeg'
+import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
+
 const Bio = () => {
     return (
         <Grid
@@ -17,15 +18,11 @@ const Bio = () => {
                 </h1>
             </Grid>
             <Grid  >
-             
-             
-                    <Avatar
-                        alt="Remy Sharp"
-                        src={ProfilePhoto}
-                        sx={{ width: 200, height: 200 }}
-                    />
-          
-          
+                <Avatar
+                    alt="Remy Sharp"
+                    src={ProfilePhoto}
+                    sx={{ width: 300, height: 300 }}
+                />
             </Grid>
             <Grid>
                 <Typography variant="body1" gutterBottom>
@@ -34,8 +31,7 @@ const Bio = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </Typography>
             </Grid>
-           
-       </Grid>
+        </Grid>
     )
 }
 

@@ -10,11 +10,12 @@ import Container from '@mui/material/Container';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-
 import Box from '@mui/material/Box';
 
 const cards = [1, 2, 3];
+
 function TabPanel(props) {
+
     const { children, value, index, ...other } = props;
 
     return (
@@ -55,11 +56,10 @@ const Portfolio = () => {
         setValue(newValue);
     };
     return (
-    
-           <div>
-               <h1>
-                   Portfolio
-               </h1>
+        <div>
+            <h1>
+                Portfolio
+            </h1>
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -112,7 +112,6 @@ const Portfolio = () => {
                     Item Three
                 </TabPanel>
             </Box>
-           
         </div>
     )
 }

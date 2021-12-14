@@ -1,24 +1,21 @@
 import React from 'react';
 import { Grid, Paper, Switch } from '@mui/material';
-
 import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
-
 import SpeedDial from '@mui/material/SpeedDial';
-
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-
 import ExploreIcon from '@mui/icons-material/Explore';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import Smartphone from '@mui/icons-material/Smartphone';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import BookIcon from '@mui/icons-material/Book';
+
 const Footer = (props) => {
+
     const actions = props.actions
     const darkMode = props.darkmode
     const setDarkMode = props.setdarkmode
@@ -46,7 +43,8 @@ const Footer = (props) => {
                     top: -30,
                     left: 0,
                     right: 0,
-                    margin: '0 auto',}}
+                    margin: '0 auto',
+                }}
                     ariaLabel="SpeedDial basic example"
                     sx={{ position: 'absolute', bottom: 5, right: 995 }}
                     icon={<ExploreIcon />}
@@ -118,10 +116,7 @@ const Footer = (props) => {
                             <BookIcon />
                         </IconButton>
                     </Grid>
-            
                 </Grid>
-              
-
             </Paper>
         </Box>
     )
